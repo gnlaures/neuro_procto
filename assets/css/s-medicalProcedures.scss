@@ -1,0 +1,158 @@
+.s-medicalProcedures {
+	position: relative;
+	z-index: 2;
+	margin-top: -65px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	.u-container {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	&__content {
+		display: block;
+		max-width: 500px;
+		padding-right: 50px;
+		position: relative;
+		z-index: 2;
+		h2 {
+			@include preset__h2();
+			margin-bottom: 12px;
+		}
+		p {
+			@include preset__p__l();
+			font-size: 20px;
+		}
+		&__btns {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 20px;
+		}
+	}
+	&__slider {
+		flex: 1 1 auto;
+		max-width: 690px;
+		.swiper-slide {
+			@include transition();
+			top: 40px;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			position: relative;
+			&.swiper-slide-active {
+				top: 0;
+				opacity: 1;
+				visibility: visible;
+				pointer-events: inherit;
+			}
+			&.swiper-slide-next {
+				opacity: 1 !important;
+				visibility: visible;
+				pointer-events: inherit;
+				top: 20px !important;
+			}
+			&.swiper-next-next {
+				opacity: 0.4;
+				visibility: visible;
+				pointer-events: none;
+				top: 40px;
+			}
+		}
+	}
+}
+// padding fix
+@media screen and (max-width: 1140px) {
+	.s-medicalProcedures {
+		margin-top: 0;
+		padding-top: 190px;
+	}
+}
+@media screen and (max-width: 780px) {
+	.s-medicalProcedures {
+		margin-top: 0;
+		padding-top: 130px;
+	}
+}
+@media screen and (max-width: 580px) {
+	.s-medicalProcedures {
+		margin-top: 0;
+		padding-top: 90px;
+	}
+}
+
+// responsive
+@media screen and (max-width: 1200px) {
+	.s-medicalProcedures__content {
+		padding-right: 30px;
+	}
+	.s-medicalProcedures__content__btns {
+		display: block;
+		.cBtn {
+			margin-bottom: 15px;
+		}
+	}
+}
+@media screen and (max-width: 1140px) {
+	.s-medicalProcedures {
+		padding-bottom: 60px;
+		.u-container {
+			display: block;
+			max-width: 640px;
+		}
+		&__content {
+			@include flexWidth(100%);
+			padding-right: 0;
+			margin-bottom: 35px;
+			* {
+				text-align: center;
+			}
+			&__btns {
+				.cBtn {
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 35px;
+				}
+				.c-slideArrows {
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+		&__slider {
+			@include flexWidth(100%);
+			.swiper-slide {
+				&.swiper-slide-next {
+					top: 0 !important;
+				}
+				&.swiper-next-next {
+					top: 20px;
+				}
+				&.swiper-slide-prev {
+					opacity: 0.4;
+					visibility: visible;
+					pointer-events: none;
+					top: 20px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.s-medicalProcedures__slider {
+		max-width: 320px;
+		width: 100%;
+		min-width: inherit;
+		margin: 0 auto;
+		.swiper-slide {
+			&.swiper-slide-next {
+				opacity: 0.4 !important;
+				visibility: visible;
+				pointer-events: none;
+				top: 20px !important;
+			}
+		}
+	}
+}

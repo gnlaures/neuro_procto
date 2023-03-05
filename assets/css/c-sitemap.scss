@@ -1,0 +1,30 @@
+.c-sitemap {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	&__group {
+		margin-right: 45px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+		h4 {
+			@include preset__h4(var(--secondary));
+			margin-bottom: 5px;
+		}
+		ul {
+			li {
+				margin-bottom: 5px;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				a {
+					@include preset__p(var(--white3));
+					&:hover {
+						color: var(--secondary)
+					}
+				}
+			}
+		}
+	}
+}

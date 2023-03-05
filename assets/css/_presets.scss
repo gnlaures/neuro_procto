@@ -1,0 +1,98 @@
+// presets - text styles
+@mixin preset__p($tc: var(--text)) {
+	font-style: normal;
+	font-weight: var(--fw__regular);
+	font-size: 18px;
+	line-height: 1.5;
+	color: $tc;
+	a {
+		color: var(--primary);
+		font-weight: var(--fw__bold);
+		&:hover {
+			text-decoration: underline;
+		}
+		&:focus {
+			background: var(--secondary);
+		}
+	}
+}
+@mixin preset__p__l($tc: var(--text)) {
+	font-style: normal;
+	font-weight: var(--fw__regular);
+	font-size: 22px;
+	line-height: 1.5;
+	color: $tc;
+}
+@mixin preset__label() {
+	font-weight: var(--fw__bold);
+	color: var(--text__dark);
+	font-size: var(--fs__base);
+}
+@mixin preset__s__label() {
+	font-weight: var(--fw__semiBold);
+	color: var(--text);
+	font-size: calc(var(--fs__base) - 0.15rem);
+}
+
+@mixin preset__h1($tc: var(--primary)) {
+	font-weight: var(--fw__bold);
+	color: $tc;
+	line-height: 1.1;
+	letter-spacing: -1px;
+	font-size: 60px;
+}
+@mixin preset__h2($tc: var(--primary)) {
+	font-weight: var(--fw__bold);
+	color: $tc;
+	letter-spacing: -1px;
+	font-size: 44px;
+}
+@mixin preset__h3($tc: var(--primary)) {
+	font-weight: var(--fw__bold);
+	color: $tc;
+	letter-spacing: -1px;
+	font-size: 30px;
+}
+@mixin preset__h4($tc: var(--primary)) {
+	font-weight: var(--fw__semiBold);
+	color: $tc;
+	letter-spacing: -0.5px;
+	font-size: 22px;
+}
+@mixin preset__h5($tc: var(--primary)) {
+	font-weight: var(--fw__semiBold);
+	color: $tc;
+	letter-spacing: -1px;
+	font-size: 20px;
+}
+@mixin preset__h6($tc: var(--primary)) {
+	font-weight: var(--fw__semiBold);
+	color: $tc;
+	letter-spacing: -1px;
+	font-size: 18px;
+}
+
+// presets - generic
+@mixin preset__scroll($bg: var(--scroll__bg), $bar: var(--scroll__bar), $size: var(--scroll__size), $radius: var(--scroll__radius)) {
+	&::-webkit-scrollbar {
+		width: $size;
+		height: $size;
+	}
+	&::-webkit-scrollbar-button {
+		width: 0;
+		height: 0;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: $bar;
+		border: 0;
+		border-radius: $radius;
+		height: $size;
+	}
+	&::-webkit-scrollbar-track {
+		background: $bg;
+		border: 0;
+		border-radius: $radius;
+		height: $size;
+	}
+}
+@mixin preset__masks() {}

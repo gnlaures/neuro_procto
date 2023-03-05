@@ -1,0 +1,21 @@
+.s-generalStaff {
+	position: relative;
+	z-index: 1;
+	&__content {
+		position: relative;
+	}
+	.u-container {
+		overflow: hidden;
+	}
+	.c-slideArrows {
+		position: absolute;
+		top: 50%;
+		padding: 0 15px;
+		z-index: 2;
+		margin-top: -60px;
+	}
+	h2 {
+		@include preset__h2();
+		margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,35 @@
+.s-gridPosts {
+	display: block;
+	h2 {
+		@include preset__h2();
+		margin-bottom: 15px;
+	}
+	&.--videos {
+		padding: 60px 0;
+	}
+}
+
+.s-listPosts {
+	box-shadow: var(--shadow__1);
+	background: var(--white);
+	display: block;
+	padding: 60px 0;
+	.u-container {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	&__content {
+		flex: 1 1 auto;
+		padding-right: 40px;
+		&__articles {
+			> li {
+				margin-bottom: 60px;
+			}
+		}
+	}
+	&__aside {
+		@include flexWidth(300px);
+	}
+}

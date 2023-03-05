@@ -1,0 +1,43 @@
+
+.c-cardProcedure {
+	display: block;
+	padding: 10px;
+	&__hero {
+		@include transition();
+		border-radius: var(--radius);
+		box-shadow: var(--shadow__1);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		min-height: 220px;
+		background: var(--white);
+		padding: 25px 30px;
+		width: 100%;
+	}
+	&__content {
+		display: block;
+		width: 100%;
+	}
+	&__icon {
+		display: block;
+		width: 100%;
+		margin-bottom: 15px;
+		img {
+			display: block;
+			width: auto;
+			height: 80px;
+			object-fit: contain;
+			margin: 0 auto;
+		}
+	}
+	&__title {
+		@include preset__h4(var(--primary));
+		text-align: center;
+	}
+}
+@media screen and (max-width: 480px) {
+	.c-cardProcedure__hero {
+		padding: 20px 25px;
+	}
+}
