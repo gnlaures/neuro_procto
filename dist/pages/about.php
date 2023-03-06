@@ -8,7 +8,7 @@
 include('assets/parts/l-headerInner.php');?>
 
 <div class="l-innerPageContentHero">
-    <section class="s-twoColsContent" id="historia">
+    <section class="s-twoColsContent s-about" id="historia">
         <div class="u-container">
             <div class="s-twoColsContent__col u-fw60">
                 <img src="assets/media/img/sobre_content_1.jpg" alt="Descrição da Imagem">
@@ -26,7 +26,7 @@ include('assets/parts/l-headerInner.php');?>
             <p>A idéia de construir a Proctomias, surgiu junto com o objetivo de oferecer a primeira clínica especializada em Coloproctologia na Região de Criciúma. Dr. João Claudio da Rocha Wasniewski, responsável pela Proctomais formou-se na Universidade Federal do Rio Grande do Sul (UFRGS) no ano de 2005. Após realizou 2 anos de Residência Médica em Cirurgia Geral no Hospital de Clínicas de Porto Alegre (HCPA) seguidos de 2 anos de Residência Médica no Grupo Hospitalar Nossa Senhora da Conceição em Porto Alegre (GHC) na área de Coloproctologia. Possui também Pós Graduação no St. Mark’s Hospital and Academic Institute em Londres.</p>
         </div>
     </section>
-    <section class="s-twoColsContent">
+    <section class="s-twoColsContent s-about">
         <div class="u-container">
             <div class="s-twoColsContent__col u-fw40">
                 <h2>Estrutura</h2>
@@ -44,7 +44,7 @@ include('assets/parts/l-headerInner.php');?>
                 data-init-cols="5"
                 data-init-padd="10"
                 data-init-jc="u-jcc"
-                data-break-vw="1380, 1360, 780"
+                data-break-vw="1024, 800, 500"
                 data-break-cols="4, 3, 2"
                 data-break-padds="10, 8, 5"
                 data-break-jc="u-jcc, u-jcc, u-jcc">
@@ -102,10 +102,10 @@ include('assets/parts/l-headerInner.php');?>
                 data-init-cols="3"
                 data-init-padd="15"
                 data-init-jc="u-jcc"
-                data-break-vw="1380, 1360, 780"
-                data-break-cols="4, 3, 2"
-                data-break-padds="10, 8, 5"
-                data-break-jc="u-jcfs, u-jcfe, u-jcc">
+                data-break-vw="980, 780"
+                data-break-cols="2, 1"
+                data-break-padds="10, 10"
+                data-break-jc="u-jcc, u-jcc">
                 <li>
                     <a href="" class="c-cardMvv">
                         <div class="c-cardMvv__icon">

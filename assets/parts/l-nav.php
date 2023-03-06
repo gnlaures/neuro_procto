@@ -3,7 +3,7 @@
         <div class="u-container">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="contato">
                         <i><?php include('assets/media/icons/icon_map.svg');?></i>
                         <span>Localização</span>
                     </a>

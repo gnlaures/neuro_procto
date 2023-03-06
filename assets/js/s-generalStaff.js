@@ -1,6 +1,6 @@
 var swiper__medicalProcedures = new Swiper(".js-staffSlider", {
     slidesPerView: 2,
-    spaceBetween: 20,
+    spaceBetween: 10,
     navigation: {
         nextEl: '.s-generalStaff .c-slideArrows__arrow.--r',
         prevEl: '.s-generalStaff .c-slideArrows__arrow.--l',
@@ -10,8 +10,13 @@ var swiper__medicalProcedures = new Swiper(".js-staffSlider", {
     },
     breakpoints: {
         // when window width is >= 320px
-        480: {
+        1080: {
             slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        780: {
+            slidesPerView: 3,
+            spaceBetween: 15,
         },
     }
 });

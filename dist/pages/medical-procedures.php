@@ -14,10 +14,10 @@ include('assets/parts/l-headerInner.php');?>
                 data-init-cols="4"
                 data-init-padd="5"
                 data-init-jc="u-jcc"
-                data-break-vw="1380, 1360, 780"
-                data-break-cols="4, 3, 2"
-                data-break-padds="10, 8, 5"
-                data-break-jc="u-jcfs, u-jcfe, u-jcc">
+                data-break-vw="1280, 960, 640, 430"
+                data-break-cols="4, 3, 2, 1"
+                data-break-padds="5, 5, 0, 0"
+                data-break-jc="u-jcc, u-jcc, u-jcc, jcc">
                 <li>
                     <?php $cCardMedicalProcedure = array(
                         'icon' => 'assets/media/icons/icon_procedimento.png',

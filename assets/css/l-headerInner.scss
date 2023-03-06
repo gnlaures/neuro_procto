@@ -102,98 +102,62 @@
 		}
 	}
 }
-@media screen and (max-width: 1360px) {
-	.l-headerHome {
-		&__picture {
-			img {
-				left: 0;
-			}
+@media screen and (max-width: 1280px) {
+	.l-headerInner {
+		padding-top: 170px;
+		padding-bottom: 260px;
+		&__brandEffect {
+			@include rotate(10deg, center);
+			bottom: 10px;
+			width: 520px;
+			height: 280px;
+		}
+		&__breadcrumb {
+			bottom: 120px;
 		}
 	}
 }
-@media screen and (max-width: 1140px) {
-	.l-headerHome {
-		padding-bottom: 0px;
+@media screen and (max-width: 1080px) {
+	.l-headerInner {
 		overflow: inherit;
+		padding-bottom: 80px;
+		border-bottom-left-radius: 120px;
+		box-shadow: var(--shadow__1);
 		&:after {
 			display: none;
 		}
-		.u-container {
-			display: block;
-			padding: 0;
+		&__bgEffect {
+			border-bottom-left-radius: 120px;
 		}
-		&__content {
-			@include cleanFlexHeight();
-			width: 100%;
-			max-width: 640px;
-			margin: 0 auto;
-			padding-top: 70px;
-			padding-left: 20px;
-			padding-right: 20px;
-			padding-bottom: 0;
-			* {
-				text-align: center;
-			}
-			.c-cta {
-				margin-left: auto;
-				margin-right: auto;
-			}
-		}
-		&__clinics {
-			justify-content: center;
-			padding-top: 60px;
-		}
-		&__picture {
-			height: auto;
-			width: 100%;
-			margin-top: 40px;
-			img {
-				display: block;
-				width: auto;
-				max-width: 100%;
-				height: auto;
-				position: relative;
-				object-position: center;
-				object-fit: inherit;
-				margin: 0 auto;
-			}
-		}
-		&__brandEffect {
-			@include rotate(-2.91deg, center);
-			left: -10%;
-			bottom: -142px;
-			height: auto;
-			img {
-				left: 0;
-				top: 0;
-				height: 280px;
-			}
-		}
-
 		&__curve {
 			display: none;
 		}
-	}
-}
-@media screen and (max-width: 640px) {
-	.l-headerHome__content {
-		h1 {
-			font-size: 42px;
+		&__brandEffect {
+			bottom: -80px;
+			width: 300px;
+			height: 160px;
+		}
+		&__breadcrumb {
+			bottom: -50px;
 		}
 	}
 }
-@media screen and (max-width: 550px) {
-	.l-headerHome__clinics {
+@media screen and (max-width: 780px) {
+	.l-headerInner__content .u-container {
+		max-width: 600px;
+
+	}
+	.l-headerInner__content {
+		h1 {
+			font-size: 44px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+
+	.l-headerInner__brandEffect {
 		display: none;
 	}
-	.l-headerHome__picture {
-		display: block;
-		margin-top: 20px;
-	}
 }
-@media screen and (max-width: 470px) {
-	.l-headerHome__content .c-cta {
-		@include cCta__br;
-		@include cCta__small;
-	}
-}
+

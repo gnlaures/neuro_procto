@@ -1,3 +1,4 @@
+// general
 .p-inner {
 	.s-locations {
 		background: var(--page__bg);
@@ -53,6 +54,7 @@
 	}
 }
 
+// news
 .p-inner.p-news,
 .p-inner.p-news-categories,
 .p-inner.p-news-article {
@@ -70,5 +72,26 @@
 .p-inner.p-news-article {
 	.s-gridPosts {
 		padding-top: 60px;
+	}
+}
+
+// procedures - mobile
+@media screen and (max-width: 1140px) {
+	.p-inner.p-procedures {
+		.l-innerPageContentHero {
+			padding-bottom: 0;
+		}
+		.s-schedule {
+			margin-top: 0;
+		}
+	}
+}
+
+// contact
+@media screen and (max-width: 740px) {
+	.p-inner.p-contact {
+		.s-locations {
+			display: block !important;
+		}
 	}
 }

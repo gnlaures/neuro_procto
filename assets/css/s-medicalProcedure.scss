@@ -10,3 +10,16 @@
 		margin-top: 20px;
 	}
 }
+
+@media screen and (max-width: 1140px) {
+	.s-medicalProcedure {
+		background: var(--white__gradient);
+		box-shadow: var(--shadow__1);
+		padding-bottom: 50px;
+		* {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+	}
+}

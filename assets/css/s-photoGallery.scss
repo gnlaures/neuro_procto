@@ -21,3 +21,9 @@
 		margin-bottom: 10px;
 	}
 }
+
+@media screen and (max-width: 1140px) {
+	.p-inner.p-staff .s-photoGallery {
+		margin-top: 0 !important;
+	}
+}

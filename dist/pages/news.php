@@ -15,7 +15,7 @@ include('assets/parts/l-headerInner.php');?>
                 data-init-cols="2"
                 data-init-padd="15"
                 data-init-jc="u-jcsb"
-                data-break-vw="1024"
+                data-break-vw="740"
                 data-break-cols="1"
                 data-break-padds="10"
                 data-break-jc="u-jcc">
@@ -53,10 +53,10 @@ adipisci voluptas sed omnis sed.',
                 data-init-cols="3"
                 data-init-padd="15"
                 data-init-jc="u-jcsb"
-                data-break-vw="1024"
-                data-break-cols="1"
-                data-break-padds="10"
-                data-break-jc="u-jcc">
+                data-break-vw="940, 540"
+                data-break-cols="2, 1"
+                data-break-padds="10, 10"
+                data-break-jc="u-jcc, jcc">
                 <li>
                     <?php $cCardVideo = array(
                             'href' => 'noticia-artigo',
@@ -81,7 +81,7 @@ adipisci voluptas sed omnis sed.',
                         'title' => 'Lorem Ipsum Stur Adisc');
                     include('assets/parts/c-cardVideo.php'); ?>
                 </li>
-                <li class="u-dnone">
+                <li>
                     <?php $cCardVideo = array(
                         'href' => 'noticia-artigo',
                         'modifiers' => '',

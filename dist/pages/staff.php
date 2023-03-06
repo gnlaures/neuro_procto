@@ -17,8 +17,8 @@ include('assets/parts/l-headerInner.php');?>
                 data-init-cols="7"
                 data-init-padd="10"
                 data-init-jc="u-jcc"
-                data-break-vw="1380, 1360, 780"
-                data-break-cols="4, 3, 2"
+                data-break-vw="1024, 780, 420"
+                data-break-cols="5, 4, 3"
                 data-break-padds="5, 5, 5"
                 data-break-jc="u-jcc, u-jcc, u-jcc">
                 <li>

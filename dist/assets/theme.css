@@ -19,6 +19,7 @@
     --white: #fff;
     --white2: #F5F7FA;
     --white3: #efefef;
+    --white__gradient: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 53%);
     --grayLight__a: rgba(243, 243, 243, 1);
     --grayLight__b: rgba(231, 231, 231, 1);
     --grayLight__c: rgba(217, 217, 217, 1);

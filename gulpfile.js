@@ -57,6 +57,7 @@ const control = {
             'assets/css/s-blog.scss',
             'assets/css/s-doctor.scss',
             'assets/css/s-error.scss',
+            'assets/css/s-contact.scss',
             'assets/css/s-generalStaff.scss',
             'assets/css/s-locations.scss',
             'assets/css/s-medicalProcedure.scss',
@@ -66,6 +67,7 @@ const control = {
             'assets/css/s-schedule.scss',
             'assets/css/s-testmonials.scss',
             'assets/css/s-gridPosts.scss',
+            'assets/css/s-listPosts.scss',
             'assets/css/s-plainText.scss',
 
             'assets/css/l-footer.scss',
