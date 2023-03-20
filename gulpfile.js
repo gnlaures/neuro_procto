@@ -52,6 +52,7 @@ const control = {
             'assets/css/c-blogWidget.scss',
             'assets/css/c-pagination.scss',
             'assets/css/c-searchForm.scss',
+            'assets/css/c-toggleItem.scss',
 
             'assets/css/s-twoColsContent.scss',
             'assets/css/s-blog.scss',
@@ -69,6 +70,7 @@ const control = {
             'assets/css/s-gridPosts.scss',
             'assets/css/s-listPosts.scss',
             'assets/css/s-plainText.scss',
+            'assets/css/s-faq.scss',
 
             'assets/css/l-footer.scss',
             'assets/css/l-headerHome.scss',
@@ -86,9 +88,10 @@ const control = {
             "assets/js/c-form.js",
             "assets/js/c-formSchedule.js",
             "assets/js/c-formContact.js",
-            "assets/js/c-formFeedback.js",
+            "assets/js/c-toggleItem.js",
             "assets/js/c-photo.js",
             "assets/js/c-scrollLink.js",
+            'assets/js/c-toggleItem.js',
             "assets/js/s-generalStaff.js",
             "assets/js/s-medicalProcedures.js",
             "assets/js/s-medicalProceduresPage.js",

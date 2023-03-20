@@ -45,6 +45,11 @@
             $siteConfig['title'] = $siteConfig['title'].$siteConfig['title_spacer'].'Sobre';
             $siteConfig['body_class'] = 'p-inner p-contact';
             break;
+        case 'faq' :
+            $siteConfig['active_page'] = 'dist/pages/faq.php';
+            $siteConfig['title'] = $siteConfig['title'].$siteConfig['title_spacer'].'FAQ';
+            $siteConfig['body_class'] = 'p-inner p-faq';
+            break;
         case 'procedimentos' :
             $siteConfig['active_page'] = 'dist/pages/medical-procedures.php';
             $siteConfig['title'] = $siteConfig['title'].$siteConfig['title_spacer'].'Sobre';
